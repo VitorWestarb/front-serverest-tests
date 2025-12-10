@@ -4,28 +4,53 @@ Este projeto contém testes automatizados Playwright para o Front Serverest.
 
 Ele está dividido em dois conjuntos de testes:
 
-Projeto 1: Cenários 1, 2 e 3 (Cadastro e Login ADMIN)
+Projeto 1: Cenários 1, 2 e 3 (Cadastro de usuário, Login com usuário Admin e Login inválido)
 
-Projeto 2: Cenários 4 e 5 (Cadastro de produto e visualização pelo usuário comum)
+Projeto 2: Cenários 4 e 5 (Cadastro de produto com usuário admin e visualização pelo usuário comum)
 
 🛠 Pré-requisitos
 
 Node.js (versão LTS recomendada)
 
-PowerShell, CMD ou Terminal (Linux/macOS)
+Para verificar se já está instalado e a versão:
+
+node -v
+
+Para instalar/atualizar:
+
+Windows/macOS: https://nodejs.org
+
+Linux (Debian/Ubuntu):
+
+sudo apt update
+sudo apt install nodejs npm
+
+A versão mínima recomendada é LTS (ex.: 18.x ou 20.x)
+
+Terminal para executar comandos
+
+Windows: PowerShell ou CMD
+
+Linux/macOS: Terminal
 
 🚀 Passo 1 – Clonar o projeto
-git clone <URL_DO_SEU_REPOSITORIO>
+
+git clone https://github.com/VitorWestarb/front-serverest-tests.git
+
 cd front-serverest-tests
 
 🚀 Passo 2 – Instalar dependências
+
 npm install
+
 npx playwright install
 
 Isso instalará o Playwright e os navegadores necessários.
 
 🚀 Passo 3 – Executar os testes
+
 Projeto 1 (Cenários 1, 2 e 3)
+
 npx playwright test tests/specs/auth.spec.js
 
 Projeto 2 (Cenários 4 e 5)
