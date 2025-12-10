@@ -75,14 +75,20 @@ Testes gravam vídeos e screenshots apenas em caso de falha (configuração play
 
 Por padrão, os testes usam o navegador Chromium. É possível rodar Projeto 1 ou Projeto 2 em outros navegadores usando a flag --project:
 
-# Projeto 1 (Cenários 1, 2 e 3)
+Projeto 1 (Cenários 1, 2 e 3)
+
 npx playwright test tests/specs/auth.spec.js --project=chromium --headed
+
 npx playwright test tests/specs/auth.spec.js --project=firefox --headed
+
 npx playwright test tests/specs/auth.spec.js --project=webkit --headed
 
-# Projeto 2 (Cenários 4 e 5)
+Projeto 2 (Cenários 4 e 5)
+
 npx playwright test tests/specs/produtos.spec.js --project=chromium --headed
+
 npx playwright test tests/specs/produtos.spec.js --project=firefox --headed
+
 npx playwright test tests/specs/produtos.spec.js --project=webkit --headed
 
 --headed abre o navegador visível, permitindo acompanhar passo a passo a execução.
