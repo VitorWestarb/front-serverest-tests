@@ -4,9 +4,9 @@ Este projeto contém testes automatizados Playwright para o Front Serverest.
 
 Ele está dividido em dois conjuntos de testes:
 
-Projeto 1: Cenários 1, 2 e 3 (Cadastro e Login ADMIN)
+Projeto 1: Cenários 1, 2 e 3 (Cadastro de usuário, Login com usuário Admin e Login inválido)
 
-Projeto 2: Cenários 4 e 5 (Cadastro de produto e visualização pelo usuário comum)
+Projeto 2: Cenários 4 e 5 (Cadastro de produto com usuário admin e visualização pelo usuário comum)
 
 🛠 Pré-requisitos
 
