@@ -34,17 +34,23 @@ Windows: PowerShell ou CMD
 Linux/macOS: Terminal
 
 🚀 Passo 1 – Clonar o projeto
+
 git clone https://github.com/VitorWestarb/front-serverest-tests.git
+
 cd front-serverest-tests
 
 🚀 Passo 2 – Instalar dependências
+
 npm install
+
 npx playwright install
 
 Isso instalará o Playwright e os navegadores necessários.
 
 🚀 Passo 3 – Executar os testes
+
 Projeto 1 (Cenários 1, 2 e 3)
+
 npx playwright test tests/specs/auth.spec.js
 
 Projeto 2 (Cenários 4 e 5)
