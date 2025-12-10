@@ -12,10 +12,29 @@ Projeto 2: Cenários 4 e 5 (Cadastro de produto com usuário admin e visualizaç
 
 Node.js (versão LTS recomendada)
 
-PowerShell, CMD ou Terminal (Linux/macOS)
+Para verificar se já está instalado e a versão:
+
+node -v
+
+Para instalar/atualizar:
+
+Windows/macOS: https://nodejs.org
+
+Linux (Debian/Ubuntu):
+
+sudo apt update
+sudo apt install nodejs npm
+
+A versão mínima recomendada é LTS (ex.: 18.x ou 20.x)
+
+Terminal para executar comandos
+
+Windows: PowerShell ou CMD
+
+Linux/macOS: Terminal
 
 🚀 Passo 1 – Clonar o projeto
-git clone <URL_DO_SEU_REPOSITORIO>
+git clone https://github.com/VitorWestarb/front-serverest-tests.git
 cd front-serverest-tests
 
 🚀 Passo 2 – Instalar dependências
