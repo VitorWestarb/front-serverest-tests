@@ -39,7 +39,11 @@ git clone https://github.com/VitorWestarb/front-serverest-tests.git
 
 cd front-serverest-tests
 
+code .
+
 🚀 Passo 2 – Instalar dependências
+
+No terminal cmd, rode:
 
 npm install
 
@@ -51,22 +55,13 @@ Isso instalará o Playwright e os navegadores necessários.
 
 Projeto 1 (Cenários 1, 2 e 3)
 
-npx playwright test tests/specs/auth.spec.js
+npx playwright test tests/specs/auth.spec.js --headed
 
 Projeto 2 (Cenários 4 e 5)
 
 Importante: Rode o Projeto 1 primeiro, pois o Projeto 2 depende do usuário e produto criados no Projeto 1.
 
-npx playwright test tests/specs/produtos.spec.js
-
-📂 Arquivos temporários gerados
-
-./tests/temp/adminUser.json – dados do usuário admin criado
-
-./tests/temp/produtoCriado.json – dados do produto criado
-
-Não é necessário criar esses arquivos manualmente; eles são gerados automaticamente pelos testes.
-
+npx playwright test tests/specs/produtos.spec.js --headed
 
 🎯 Observações
 
@@ -75,3 +70,19 @@ Todos os testes usam dados aleatórios, garantindo que não haja conflito entre 
 Testes gravam vídeos e screenshots apenas em caso de falha (configuração playwright.config.js).
 
 É possível rodar os testes em modo visível para debug alterando headless: false no playwright.config.js.
+
+🌐 Rodando os testes em diferentes navegadores
+
+Por padrão, os testes usam o navegador Chromium. É possível rodar Projeto 1 ou Projeto 2 em outros navegadores usando a flag --project:
+
+# Projeto 1 (Cenários 1, 2 e 3)
+npx playwright test tests/specs/auth.spec.js --project=chromium --headed
+npx playwright test tests/specs/auth.spec.js --project=firefox --headed
+npx playwright test tests/specs/auth.spec.js --project=webkit --headed
+
+# Projeto 2 (Cenários 4 e 5)
+npx playwright test tests/specs/produtos.spec.js --project=chromium --headed
+npx playwright test tests/specs/produtos.spec.js --project=firefox --headed
+npx playwright test tests/specs/produtos.spec.js --project=webkit --headed
+
+--headed abre o navegador visível, permitindo acompanhar passo a passo a execução.
