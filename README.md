@@ -15,8 +15,9 @@ Projeto 2: Cenários 4 e 5 (Cadastro de produto com usuário admin e visualizaç
 Node.js (versão LTS recomendada)
 
 Para verificar se já está instalado e a versão:
-
+```bash
 node -v
+```
 
 Para instalar/atualizar:
 
@@ -24,8 +25,10 @@ Windows/macOS: https://nodejs.org
 
 Linux (Debian/Ubuntu):
 
+```bash
 sudo apt update
 sudo apt install nodejs npm
+```
 
 A versão mínima recomendada é LTS (ex.: 18.x ou 20.x)
 
@@ -41,21 +44,23 @@ Linux/macOS: Terminal
 
 # 🚀 Passo 1 – Clonar o projeto
 
+```bash
 git clone https://github.com/VitorWestarb/front-serverest-tests.git
-
+```
+```bash
 cd front-serverest-tests
-
 code .
-
+```
 ---
 
 # 🚀 Passo 2 – Instalar dependências
 
 No terminal cmd, rode:
 
+```bash
 npm install
-
 npx playwright install
+```
 
 Isso instalará o Playwright e os navegadores necessários.
 
@@ -65,13 +70,17 @@ Isso instalará o Playwright e os navegadores necessários.
 
 Projeto 1 (Cenários 1, 2 e 3)
 
+```bash
 npx playwright test tests/specs/auth.spec.js --headed
+```
 
 Projeto 2 (Cenários 4 e 5)
 
 Importante: Rode o Projeto 1 primeiro, pois o Projeto 2 depende do usuário e produto criados no Projeto 1.
 
+```bash
 npx playwright test tests/specs/produtos.spec.js --headed
+```
 
 ---
 
@@ -91,18 +100,24 @@ Por padrão, os testes usam o navegador Chromium. É possível rodar Projeto 1 o
 
 Projeto 1 (Cenários 1, 2 e 3)
 
+```bash
 npx playwright test tests/specs/auth.spec.js --project=chromium --headed
-
+```
+```bash
 npx playwright test tests/specs/auth.spec.js --project=firefox --headed
-
+```
+```bash
 npx playwright test tests/specs/auth.spec.js --project=webkit --headed
-
+```
 Projeto 2 (Cenários 4 e 5)
 
+```bash
 npx playwright test tests/specs/produtos.spec.js --project=chromium --headed
-
+```
+```bash
 npx playwright test tests/specs/produtos.spec.js --project=firefox --headed
-
+```
+```bash
 npx playwright test tests/specs/produtos.spec.js --project=webkit --headed
-
+```
 --headed abre o navegador visível, permitindo acompanhar passo a passo a execução.
