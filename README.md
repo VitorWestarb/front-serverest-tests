@@ -1,4 +1,4 @@
-Front ServeRest Tests – Guia de Execução
+# Front ServeRest Tests – Guia de Execução
 
 Este projeto contém testes automatizados Playwright para o Front Serverest.
 
@@ -8,7 +8,9 @@ Projeto 1: Cenários 1, 2 e 3 (Cadastro de usuário, Login com usuário Admin e 
 
 Projeto 2: Cenários 4 e 5 (Cadastro de produto com usuário admin e visualização pelo usuário comum)
 
-🛠 Pré-requisitos
+---
+
+# 🛠 Pré-requisitos
 
 Node.js (versão LTS recomendada)
 
@@ -27,13 +29,17 @@ sudo apt install nodejs npm
 
 A versão mínima recomendada é LTS (ex.: 18.x ou 20.x)
 
+---
+
 Terminal para executar comandos
 
 Windows: PowerShell ou CMD
 
 Linux/macOS: Terminal
 
-🚀 Passo 1 – Clonar o projeto
+---
+
+# 🚀 Passo 1 – Clonar o projeto
 
 git clone https://github.com/VitorWestarb/front-serverest-tests.git
 
@@ -41,7 +47,9 @@ cd front-serverest-tests
 
 code .
 
-🚀 Passo 2 – Instalar dependências
+---
+
+# 🚀 Passo 2 – Instalar dependências
 
 No terminal cmd, rode:
 
@@ -51,7 +59,9 @@ npx playwright install
 
 Isso instalará o Playwright e os navegadores necessários.
 
-🚀 Passo 3 – Executar os testes
+---
+
+# 🚀 Passo 3 – Executar os testes
 
 Projeto 1 (Cenários 1, 2 e 3)
 
@@ -63,7 +73,9 @@ Importante: Rode o Projeto 1 primeiro, pois o Projeto 2 depende do usuário e pr
 
 npx playwright test tests/specs/produtos.spec.js --headed
 
-🎯 Observações
+---
+
+# 🎯 Observações
 
 Todos os testes usam dados aleatórios, garantindo que não haja conflito entre execuções.
 
@@ -71,7 +83,9 @@ Testes gravam vídeos e screenshots apenas em caso de falha (configuração play
 
 É possível rodar os testes em modo visível para debug alterando headless: false no playwright.config.js.
 
-🌐 Rodando os testes em diferentes navegadores
+---
+
+# 🌐 Rodando os testes em diferentes navegadores
 
 Por padrão, os testes usam o navegador Chromium. É possível rodar Projeto 1 ou Projeto 2 em outros navegadores usando a flag --project:
 
